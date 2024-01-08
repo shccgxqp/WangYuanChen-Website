@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/WangYuanChen-Website/static/css/main.a376204b.css",
-    "main.js": "/WangYuanChen-Website/static/js/main.0e6e38ef.js",
+    "main.css": "/WangYuanChen-Website/static/css/main.0e3c44e4.css",
+    "main.js": "/WangYuanChen-Website/static/js/main.d13411ef.js",
+    "static/js/726.64e9befd.chunk.js": "/WangYuanChen-Website/static/js/726.64e9befd.chunk.js",
     "static/media/about04.png": "/WangYuanChen-Website/static/media/about04.fa7b3a72ed32b0e25bfb.png",
     "static/media/about02.png": "/WangYuanChen-Website/static/media/about02.7a3df03410ee756268ec.png",
     "static/media/about01.png": "/WangYuanChen-Website/static/media/about01.080509de05322b7aafda.png",
@@ -28,11 +29,12 @@
     "static/media/git.png": "/WangYuanChen-Website/static/media/git.a54d3fa44e02f2f61e69.png",
     "static/media/skype.png": "/WangYuanChen-Website/static/media/skype.c8d7ee175da5b4c8a8ab.png",
     "index.html": "/WangYuanChen-Website/index.html",
-    "main.a376204b.css.map": "/WangYuanChen-Website/static/css/main.a376204b.css.map",
-    "main.0e6e38ef.js.map": "/WangYuanChen-Website/static/js/main.0e6e38ef.js.map"
+    "main.0e3c44e4.css.map": "/WangYuanChen-Website/static/css/main.0e3c44e4.css.map",
+    "main.d13411ef.js.map": "/WangYuanChen-Website/static/js/main.d13411ef.js.map",
+    "726.64e9befd.chunk.js.map": "/WangYuanChen-Website/static/js/726.64e9befd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a376204b.css",
-    "static/js/main.0e6e38ef.js"
+    "static/css/main.0e3c44e4.css",
+    "static/js/main.d13411ef.js"
   ]
 }
