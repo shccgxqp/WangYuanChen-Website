@@ -26,7 +26,7 @@ const Header = () => (
           <div style={{ marginLeft: 20 }}>
             <p className="p-text">Hello, I am</p>
             <h1 className="head-text">Wang Yuan Chen</h1>
-            <p className="p-text">Explore and create, unleash imagination</p>
+            <p className="p-text">探索無限的可能，分想無限的樂趣</p>
           </div>
 
         </div>

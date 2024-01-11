@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">I Know that <span>Good Design</span> <br />means  <span>Good Business</span></h2>
+      <h2 className="head-text"><span>設計</span> 是一種語言藝術 <br />用來展現 <span>故事</span>和<span>情感</span></h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
