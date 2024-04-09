@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Tooltip } from 'react-tooltip';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Tooltip } from "react-tooltip";
 
-import { AppWrap, MotionWrap } from '../../wrapper';
-import { urlFor, client } from '../../client';
-import './Skills.scss';
+import { AppWrap, MotionWrap } from "../../wrapper";
+import { urlFor, client } from "../../client";
+import "./Skills.scss";
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
@@ -16,6 +16,7 @@ const Skills = () => {
 
     client.fetch(query).then((data) => {
       setExperiences(data);
+      console.log(data);
     });
 
     client.fetch(skillsQuery).then((data) => {
@@ -50,7 +51,7 @@ const Skills = () => {
           {experiences.map((experience, index) => (
             <motion.div
               className="app__skills-exp-item"
-              key={experience.year}
+              key={"experience" + experience.year}
             >
               <div className="app__skills-exp-year">
                 <p className="bold-text">{experience.year}</p>
@@ -68,6 +69,12 @@ const Skills = () => {
                     >
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
+                      {work.desc &&
+                        work.desc.split("。").map((sentence, index) => (
+                          <p key={"desc" + index} className="p-text">
+                            {sentence}
+                          </p>
+                        ))}
                     </motion.div>
                     <Tooltip
                       id={work.name}
@@ -76,7 +83,7 @@ const Skills = () => {
                       className="skills-tooltip"
                     >
                       {work.desc}
-                    </Tooltip >
+                    </Tooltip>
                   </>
                 ))}
               </motion.div>
@@ -89,7 +96,7 @@ const Skills = () => {
 };
 
 export default AppWrap(
-  MotionWrap(Skills, 'app__skills'),
-  'skills',
-  'app__whitebg',
+  MotionWrap(Skills, "app__skills"),
+  "skills",
+  "app__whitebg"
 );

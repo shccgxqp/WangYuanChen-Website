@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
-import { AppWrap, MotionWrap } from '../../wrapper';
-import './About.scss';
-import { urlFor, client } from '../../client';
+import { AppWrap, MotionWrap } from "../../wrapper";
+import "./About.scss";
+import { urlFor, client } from "../../client";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -18,20 +18,27 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text"><span>設計</span> 是一種語言藝術 <br />用來展現 <span>故事</span>和<span>情感</span></h2>
+      <h2 className="head-text">
+        發揮<span>創意</span>塑造細節 <br />
+        體現 <span>態度</span>和<span>品味</span>
+      </h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: 'tween' }}
+            transition={{ duration: 0.5, type: "tween" }}
             className="app__profile-item"
             key={about.title + index}
           >
             <img src={urlFor(about.imgUrl)} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
-            <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
+            <h2 className="bold-text" style={{ marginTop: 20 }}>
+              {about.title}
+            </h2>
+            <p className="p-text" style={{ marginTop: 10 }}>
+              {about.description}
+            </p>
           </motion.div>
         ))}
       </div>
@@ -40,7 +47,7 @@ const About = () => {
 };
 
 export default AppWrap(
-  MotionWrap(About, 'app__about'),
-  'about',
-  'app__whitebg',
+  MotionWrap(About, "app__about"),
+  "about",
+  "app__whitebg"
 );
